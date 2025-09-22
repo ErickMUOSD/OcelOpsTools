@@ -20,8 +20,7 @@ Automates the backup of a MySQL or PostgreSQL database running in a Docker conta
 
 #### Parameters
 - `<engine>`: The database engine to use. Supported values: `mysql`, `postgres` (optionally with version, e.g., `mysql:8.0`, `postgres:15`).
-- `<host>`: Hostname or IP address of the database (not used in the current script, but required for compatibility).
-- `<port>`: Port number for the database (not used in the current script, but required for compatibility).
+- `<host>`: Hostname or IP address of the database (.
 - `<user>`: Database username.
 - `<password>`: Database password.
 - `<database>`: Name of the database to back up.
@@ -30,7 +29,7 @@ Automates the backup of a MySQL or PostgreSQL database running in a Docker conta
 #### Example
 
 ```bash
-./automate_backups.sh mysql localhost 3306 root mypassword mydatabase /home/user/backups
+./automate_backups.sh mysql:8.4 localhost  root mypassword mydatabase /home/user/backups
 ```
 
 This will:
